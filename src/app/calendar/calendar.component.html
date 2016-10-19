@@ -1,0 +1,15 @@
+<h1>Tueller/Unified Calendar</h1>
+<h2>{{monthName}}, {{year}}</h2>
+<table class="table">
+    <caption>This is meant to be a calendar</caption>
+    <thead>
+        <tr>
+            <th *ngFor="let name of dayNames">{{name}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let week of days">
+            <td *ngFor="let day of week" class="calendar-day" [ngClass]="day.cssClass" [class.selected]="day.date==dayOfMonth">{{day.date}}</td>
+        </tr>
+    </tbody>
+</table>

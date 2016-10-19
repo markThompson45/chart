@@ -4,17 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { DateService } from './date.service';
+import { PadNumberPipe } from './pad-number.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalendarComponent,
+    PadNumberPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ DateService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

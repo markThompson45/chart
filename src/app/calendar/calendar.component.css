@@ -1,0 +1,19 @@
+.selected {
+    background-color: lightskyblue;
+}
+
+.calendar-day {
+    font-weight: bold;
+}
+
+.last-month {
+    background-color: lightslategray
+}
+
+.this-month {
+
+}
+
+.next-month {
+    background-color: lightgrey
+}
