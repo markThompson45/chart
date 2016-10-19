@@ -7,8 +7,8 @@ describe('chart App', function() {
     page = new ChartPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying CHART', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('CHART');
   });
 });
